@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<view xmlns="http://jmix.io/schema/flowui/view"
+      title="msg://userDetailView1.title"
+      focusComponent="form">
+    <data>
+        <instance id="userDc"
+                  class="com.company.competitions.entity.User">
+            <fetchPlan extends="_base">
+                <property name="position" fetchPlan="_base"/>
+                <property name="department" fetchPlan="_base"/>
+            </fetchPlan>
+            <loader id="userDl"/>
+        </instance>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+    </facets>
+    <actions>
+        <action id="saveCloseAction" type="detail_saveClose"/>
+        <action id="closeAction" type="detail_close"/>
+    </actions>
+    <layout>
+        <formLayout id="form" dataContainer="userDc">
+            <responsiveSteps>
+                <responsiveStep minWidth="0" columns="1"/>
+                <responsiveStep minWidth="40em" columns="2"/>
+            </responsiveSteps>
+            <textField id="persNumberField" property="persNumber"/>
+            <textField id="persNumberRukField" property="persNumberRuk"/>
+            <datePicker id="birthDateField" property="birthDate"/>
+            <textField id="polField" property="pol"/>
+            <entityPicker id="positionField" property="position">
+                <actions>
+                    <action id="entityLookupAction" type="entity_lookup"/>
+                    <action id="entityClearAction" type="entity_clear"/>
+                </actions>
+            </entityPicker>
+            <entityPicker id="departmentField" property="department">
+                <actions>
+                    <action id="entityLookupAction" type="entity_lookup"/>
+                    <action id="entityClearAction" type="entity_clear"/>
+                </actions>
+            </entityPicker>
+            <textField id="usernameField" property="username"/>
+            <textField id="firstNameField" property="firstName"/>
+            <textField id="lastNameField" property="lastName"/>
+            <textField id="emailField" property="email"/>
+            <checkbox id="activeField" property="active"/>
+            <textField id="timeZoneIdField" property="timeZoneId"/>
+        </formLayout>
+        <hbox id="detailActions">
+            <button id="saveAndCloseButton" action="saveCloseAction"/>
+            <button id="closeButton" action="closeAction"/>
+        </hbox>
+    </layout>
+</view>

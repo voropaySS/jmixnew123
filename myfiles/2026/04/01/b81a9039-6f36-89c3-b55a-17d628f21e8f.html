@@ -1,0 +1,2588 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <script initial="">window.Vaadin = window.Vaadin || {};window.Vaadin.VaadinLicenseChecker = {  maybeCheck: (productInfo) => {  }};window.Vaadin.devTools = window.Vaadin.devTools || {};window.Vaadin.devTools.createdCvdlElements = window.Vaadin.devTools.createdCvdlElements || [];window.Vaadin.originalCustomElementDefineFn = window.Vaadin.originalCustomElementDefineFn || window.customElements.define;window.customElements.define = function (tagName, constructor, ...args) {const { cvdlName, version } = constructor;if (cvdlName && version) {  const { connectedCallback } = constructor.prototype;  constructor.prototype.connectedCallback = function () {    window.Vaadin.devTools.createdCvdlElements.push(this);    if (connectedCallback) {      connectedCallback.call(this);    }  }}window.Vaadin.originalCustomElementDefineFn.call(this, tagName, constructor, ...args);};</script>
+  <script initial="">window.Vaadin = window.Vaadin || {};window.Vaadin.ConsoleErrors = window.Vaadin.ConsoleErrors || [];const browserConsoleError = window.console.error.bind(window.console);console.error = (...args) => {    browserConsoleError(...args);    window.Vaadin.ConsoleErrors.push(args);};window.onerror = (message, source, lineno, colno, error) => {const location=source+':'+lineno+':'+colno;window.Vaadin.ConsoleErrors.push([message, '('+location+')']);};window.addEventListener('unhandledrejection', e => {    window.Vaadin.ConsoleErrors.push([e.reason]);});</script>
+  <script initial="">window.Vaadin.devToolsPlugins = [];
+window.Vaadin.devToolsConf = {"enable":true,"url":"./VAADIN/push","liveReloadPort":35729};
+</script>
+  <script initial="">window.Vaadin = window.Vaadin || {};
+window.Vaadin.developmentMode = true;
+</script>
+  <script initial="">if (!('CSSLayerBlockRule' in window)) {
+    window.location.search='v-r=oldbrowser';
+}
+</script>
+  <script initial="">window.Vaadin = window.Vaadin || {};window.Vaadin.TypeScript= {};</script>
+  <script initial="">window.Vaadin = window.Vaadin || {};
+window.Vaadin.featureFlagsUpdaters = window.Vaadin.featureFlagsUpdaters || [];
+window.Vaadin.featureFlagsUpdaters.push((activator) => {
+});</script>
+  <base href="./../..">
+  <script type="text/javascript">window.JSCompiler_renameProperty = function(a) { return a;}</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html, body, #outlet {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+  </style>
+  <!-- index.ts is included here automatically (either by the dev server or during the build) -->
+  <script type="module" crossorigin src="./VAADIN/build/indexhtml-BGPheI0B.js"></script>
+  <link rel="modulepreload" crossorigin href="./VAADIN/build/commonjsHelpers-DWwsNxpa.js">
+  <style>.v-reconnect-dialog,.v-system-error {position: absolute;color: black;background: white;top: 1em;right: 1em;border: 1px solid black;padding: 1em;z-index: 10000;max-width: calc(100vw - 4em);max-height: calc(100vh - 4em);overflow: auto;} .v-system-error {color: indianred;pointer-events: auto;} .v-system-error h3, .v-system-error b {color: red;}</style>
+  <style>[hidden] { display: none !important; }</style>
+  <!--CSSImport end-->
+  <!--Stylesheet end-->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Competitions">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link sizes="16x16" rel="shortcut icon" href="icons/icon-16x16.png" type="image/png">
+  <link sizes="32x32" rel="icon" href="icons/icon-32x32.png" type="image/png">
+  <link sizes="96x96" rel="icon" href="icons/icon-96x96.png?0" type="image/png">
+  <link sizes="180x180" rel="apple-touch-icon" href="icons/icon-180x180.png?0" type="image/png">
+  <link sizes="2048x2732" rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-2048x2732.png?0" type="image/png">
+  <link sizes="2732x2048" rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-2732x2048.png?0" type="image/png">
+  <link sizes="1668x2388" rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-1668x2388.png?0" type="image/png">
+  <link sizes="2388x1668" rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-2388x1668.png?0" type="image/png">
+  <link sizes="1668x2224" rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-1668x2224.png?0" type="image/png">
+  <link sizes="2224x1668" rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-2224x1668.png?0" type="image/png">
+  <link sizes="1620x2160" rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-1620x2160.png?0" type="image/png">
+  <link sizes="2160x1620" rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-2160x1620.png?0" type="image/png">
+  <link sizes="1536x2048" rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-1536x2048.png?0" type="image/png">
+  <link sizes="2048x1536" rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-2048x1536.png?0" type="image/png">
+  <link sizes="1284x2778" rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/icon-1284x2778.png?0" type="image/png">
+  <link sizes="2778x1284" rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="icons/icon-2778x1284.png?0" type="image/png">
+  <link sizes="1170x2532" rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/icon-1170x2532.png?0" type="image/png">
+  <link sizes="2532x1170" rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="icons/icon-2532x1170.png?0" type="image/png">
+  <link sizes="1125x2436" rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/icon-1125x2436.png?0" type="image/png">
+  <link sizes="2436x1125" rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="icons/icon-2436x1125.png?0" type="image/png">
+  <link sizes="1242x2688" rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/icon-1242x2688.png?0" type="image/png">
+  <link sizes="2688x1242" rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="icons/icon-2688x1242.png?0" type="image/png">
+  <link sizes="828x1792" rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-828x1792.png?0" type="image/png">
+  <link sizes="1792x828" rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-1792x828.png?0" type="image/png">
+  <link sizes="1242x2208" rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/icon-1242x2208.png?0" type="image/png">
+  <link sizes="2208x1242" rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="icons/icon-2208x1242.png?0" type="image/png">
+  <link sizes="750x1334" rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-750x1334.png?0" type="image/png">
+  <link sizes="1334x750" rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-1334x750.png?0" type="image/png">
+  <link sizes="640x1136" rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/icon-640x1136.png?0" type="image/png">
+  <link sizes="1136x640" rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="icons/icon-1136x640.png?0" type="image/png">
+  <script>if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistration('sw.js').then(function(registration) {
+    if (registration) {
+      registration.unregister();
+    }
+  });
+}</script>
+  <style data-file-path="VAADIN/themes/jmix-lumo/styles.css">/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-exception-dialog-window-content textarea {
+  background-color: var(--lumo-contrast-20pct);
+  border: 0;
+  border-radius: var(--lumo-border-radius-m);
+  box-sizing: border-box;
+  font-family: var(--lumo-font-family);
+  font-size: var(--lumo-font-size-m);
+  line-height: var(--lumo-line-height-s);
+  outline: none;
+  padding: calc(var(--lumo-size-s) - 1em * var(--lumo-line-height-s));
+  resize: none;
+}
+
+.jmix-exception-dialog-window-content textarea:focus {
+  box-shadow: 0 0 0 2px var(--lumo-primary-color-50pct);
+}
+
+.jmix-exception-dialog-window-content .jmix-exception-dialog-window-message-textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.jmix-exception-dialog-window-content .jmix-exception-dialog-window-stacktrace-textarea {
+  width: 100%;
+  flex-grow: 1;
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ *  todo
+ *   deprecated since 2.3.0
+ *   will be removed in the future releases
+ *   styles have been added to the project templates
+ */
+
+.jmix-main-view-header {
+  box-sizing: border-box;
+  display: flex;
+  height: var(--lumo-size-xl);
+  align-items: center;
+  width: 100%;
+}
+
+.jmix-main-view-drawer-toggle {
+  color: var(--lumo-secondary-text-color);
+}
+
+.jmix-main-view-title {
+  margin: 0;
+  font-size: var(--lumo-font-size-l);
+}
+
+.jmix-main-view-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+.jmix-main-view-application-title {
+  display: flex;
+  align-items: center;
+  height: var(--lumo-size-xl);
+  margin: 0;
+  padding-left: var(--lumo-space-m);
+  padding-right: var(--lumo-space-m);
+  font-size: var(--lumo-font-size-m);
+}
+
+.jmix-main-view-application-title-base-link {
+  color: var(--lumo-header-text-color);
+}
+
+.jmix-main-view-application-title-base-link:hover {
+  text-decoration: none;
+}
+
+.jmix-main-view-navigation {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+  border-color: var(--lumo-contrast-10pct);
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.jmix-main-view-footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--lumo-space-s);
+  margin-top: var(--lumo-space-s);
+  padding: var(--lumo-space-xs) var(--lumo-space-m);
+  gap: var(--lumo-space-m);
+}
+
+.jmix-main-view-footer .jmix-user-indicator {
+  flex-grow: 1;
+}
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.buttons-panel {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.datetime-picker-container {
+  display: flex;
+  align-items: baseline;
+  gap: calc(var(--lumo-space-xs) / 2);
+}
+
+.datetime-picker-container vaadin-date-picker {
+  min-width: 0;
+  flex: 1 1 auto; /*same as for Vaadin Date Time Picker date-part*/
+}
+
+.datetime-picker-container vaadin-time-picker {
+  min-width: 0;
+  flex: 1 1.65 auto; /*same as for Vaadin Date Time Picker time-part*/
+}
+
+.bordered-panel {
+  border: 1px solid;
+  border-color: var(--lumo-contrast-20pct);
+  border-radius: var(--lumo-border-radius-l);
+}
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ *  todo
+ *   deprecated since 2.3.0
+ *   will be removed in the future releases
+ *   styles have been added to the project templates
+ */
+
+.jmix-login-main-layout {
+  background-color: var(--lumo-shade-5pct);
+}
+/*
+ * Copyright 2023 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/*
+ *  todo
+ *   deprecated since 2.3.0
+ *   will be removed in the future releases
+ *   styles have been added to the project templates
+ */
+
+vaadin-app-layout.jmix-main-view-top-menu-app-layout::part(navbar) {
+  min-height: 0;
+  border-bottom: 0;
+}
+
+.jmix-main-view-top-menu-navigation-bar-box {
+  padding: 0;
+  gap: 0;
+  width: 100%;
+}
+
+.jmix-main-view-top-menu-navigation {
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.jmix-main-view-top-menu-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--lumo-contrast-10pct)
+}
+
+.jmix-main-view-top-menu-logo-container {
+  display: flex;
+  margin: 0 var(--lumo-space-m);
+}
+
+.jmix-main-view-top-menu-logo {
+  width: var(--lumo-size-m);
+  height: var(--lumo-size-m);
+}
+
+.jmix-main-view-top-menu-user-box {
+  align-self: flex-end;
+  align-items: center;
+  margin: 0 var(--lumo-space-m);
+  max-width: 20em;
+}
+
+.jmix-main-view-top-menu-view-header-box {
+  border-bottom: 1px solid var(--lumo-contrast-10pct);
+  padding: 0;
+  width: 100%;
+}
+
+.jmix-main-view-top-menu-view-title {
+  font-size: var(--lumo-font-size-l);
+  margin: var(--lumo-space-s) var(--lumo-space-m);
+}
+
+
+/*
+ * Copyright 2024 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/* @Deprecated since 2.3, has typos, unused in the framework, will be removed */
+.jmix-role-assigment-layout {
+    container-type: inline-size;
+    container-name: jmix-role-assigment-layout;
+}
+
+/* @Deprecated since 2.3, has typos, unused in the framework, will be removed */
+.jmix-role-assigment-content-wrapper {
+    flex-direction: column;
+
+    overflow: auto;
+    gap: var(--lumo-space-m);
+    padding: var(--lumo-space-m);
+}
+
+/* @Deprecated since 2.3, has typos, unused in the framework, will be removed */
+@container jmix-role-assigment-layout (min-width: 60em) {
+    .jmix-role-assigment-content-wrapper {
+        flex-direction: row;
+    }
+}
+
+.jmix-role-assignment-layout {
+    container-type: inline-size;
+    container-name: jmix-role-assignment-layout;
+}
+
+.jmix-role-assignment-content-wrapper {
+    flex-direction: column;
+
+    overflow: auto;
+    gap: var(--lumo-space-m);
+    padding: var(--lumo-space-m);
+}
+
+@container jmix-role-assignment-layout (min-width: 60em) {
+    .jmix-role-assignment-content-wrapper {
+        flex-direction: row;
+    }
+}
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-list-menu {
+  color: var(--lumo-secondary-text-color);
+  margin: 0;
+  overflow: auto;
+  padding: 0 var(--lumo-space-s);
+}
+
+.jmix-list-menu .jmix-menubar-item .menubar-list {
+  margin-inline-start: var(--lumo-space-l);
+}
+
+.jmix-list-menu .jmix-menubar-item {
+  padding: var(--lumo-space-s) 0;
+  margin: 0;
+}
+
+.jmix-list-menu .jmix-menubar-item vaadin-details-summary {
+  padding: var(--lumo-space-s);
+}
+
+.jmix-list-menu .jmix-menubar-item .jmix-menubar-summary-icon-container {
+  display: flex;
+  gap: var(--lumo-space-s);
+  align-items: center;
+}
+
+.jmix-list-menu .jmix-menu-item-link .link-icon,
+.jmix-list-menu .jmix-menubar-item .jmix-menubar-summary-icon-container .menubar-icon {
+  width: var(--lumo-icon-size-s);
+  height: var(--lumo-icon-size-s);
+  flex-shrink: 0;
+}
+
+.jmix-list-menu .jmix-menu-item-link .prefix-component,
+.jmix-list-menu .jmix-menubar-item .jmix-menubar-summary-icon-container .prefix-component {
+  flex-shrink: 0;
+}
+
+.jmix-list-menu .jmix-menu-item-link vaadin-icon.prefix-component,
+.jmix-list-menu .jmix-menubar-item .jmix-menubar-summary-icon-container vaadin-icon.prefix-component {
+  width: var(--lumo-icon-size-s);
+  height: var(--lumo-icon-size-s);
+}
+
+.jmix-list-menu .jmix-menu-item-link vaadin-icon.prefix-component[icon^='vaadin:'],
+.jmix-list-menu .jmix-menubar-item .jmix-menubar-summary-icon-container vaadin-icon.prefix-component[icon^='vaadin:'] {
+  padding: 0.125em;
+  box-sizing: border-box;
+}
+
+.jmix-list-menu .jmix-menubar-item .menubar-summary {
+  white-space: nowrap;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.jmix-list-menu .jmix-menu-item-link .suffix-component,
+.jmix-list-menu .jmix-menubar-item .jmix-menubar-summary-icon-container .suffix-component {
+  margin-inline-start: auto;
+  flex-shrink: 0;
+}
+
+.jmix-list-menu .jmix-menu-item-link {
+  gap: var(--lumo-space-s);
+  padding: var(--lumo-space-s);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  align-items: center;
+}
+
+.jmix-list-menu .jmix-menu-item-link .link-text {
+  line-height: var(--lumo-line-height-s);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.jmix-list-menu a[highlight][class*='jmix-menu-item-link'] {
+  color: var(--lumo-primary-text-color);
+}
+
+.jmix-list-menu a[highlight][class*='jmix-menu-item-link'] {
+  background-color: var(--lumo-primary-color-10pct);
+  border-radius: var(--lumo-border-radius-m);
+}
+
+.jmix-list-menu .jmix-menubar-item vaadin-details-summary::part(content) {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  align-items: center;
+}
+
+.jmix-list-menu[theme~='toggle-reverse'] vaadin-details-summary {
+  justify-content: space-between;
+}
+
+.jmix-list-menu[theme~='toggle-reverse'] vaadin-details-summary::part(toggle) {
+  order: 1;
+  margin-inline-end: 0;
+}
+
+@supports selector(:focus-visible) {
+  .jmix-list-menu .jmix-menu-item-link:focus-visible {
+    border-radius: var(--lumo-border-radius-m);
+    box-shadow: 0 0 0 var(--vaadin-focus-ring-width, 2px) var(--vaadin-focus-ring-color, var(--lumo-primary-color-50pct));
+    outline: 0;
+  }
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-user-indicator {
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+}
+
+.jmix-user-indicator .jmix-user-indicator-label {
+  white-space: nowrap;
+}
+
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.buttons-panel .jmix-simple-pagination:not([slot]):last-child {
+    margin-inline-start: auto
+}
+
+.jmix-simple-pagination {
+    align-items: center;
+    display: flex;
+    gap: var(--jmix-simple-pagination-gap);
+}
+
+.jmix-simple-pagination-status-bar {
+    margin: 0 var(--jmix-simple-pagination-gap);
+    display: flex;
+    gap: var(--jmix-simple-pagination-gap);
+}
+
+.jmix-simple-pagination .jmix-items-per-page {
+    gap: var(--jmix-simple-pagination-gap);
+}
+
+.jmix-simple-pagination-total-count.link {
+    color: var(--lumo-primary-text-color);
+    cursor: pointer;
+}
+
+.jmix-simple-pagination-navigation-button.first,
+.jmix-simple-pagination-navigation-button.prev,
+.jmix-simple-pagination-navigation-button.next,
+.jmix-simple-pagination-navigation-button.last {
+    padding: 0;
+    margin: 0;
+    height: 1.5rem;
+    min-width: 1.5rem;
+}
+
+.jmix-simple-pagination-navigation-button vaadin-icon[dir='rtl'] {
+    rotate: 180deg;
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-items-per-page {
+    align-items: center;
+    display: flex;
+    gap: var(--jmix-items-per-page-gap, 0.5em);
+}
+
+.jmix-items-per-page-select {
+    width: var(--jmix-items-per-page-select-width, 6em);
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+vaadin-menu-bar[jmix-role='jmix-dropdown-button'] vaadin-menu-bar-item::part(content),
+vaadin-menu-bar[jmix-role|='jmix-combo-button'] vaadin-menu-bar-item::part(content) {
+    align-items: center;
+    gap: var(--lumo-space-xs);
+}
+
+.jmix-dropdown-button-item-wrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--lumo-space-s);
+}
+
+vaadin-icon.jmix-dropdown-button-item-icon:not([icon^='lumo:']) {
+    padding: var(--lumo-space-xs);
+    box-sizing: border-box;
+}
+
+/* DropdownButton Styles */
+vaadin-menu-bar[jmix-role='jmix-dropdown-button'] > vaadin-menu-bar-button {
+    margin: var(--lumo-space-xs) calc(var(--lumo-space-xs) / 2);
+}
+
+/* ComboButton Styles */
+vaadin-menu-bar[jmix-role='jmix-combo-button-icon'] > vaadin-menu-bar-button {
+    margin-top: var(--lumo-space-xs);
+    margin-bottom: var(--lumo-space-xs);
+}
+
+vaadin-menu-bar[jmix-role='jmix-combo-button-icon'] > vaadin-menu-bar-button:nth-last-of-type(2) {
+    min-width: var(--lumo-button-size);
+    padding-left: calc(var(--lumo-button-size) / 4);
+    padding-right: calc(var(--lumo-button-size) / 4);
+}
+
+vaadin-menu-bar[jmix-role='jmix-dropdown-button'][theme~='small'] > vaadin-menu-bar-button > vaadin-menu-bar-item,
+vaadin-menu-bar[jmix-role='jmix-combo-button-icon'][theme~='small'] > vaadin-menu-bar-button > vaadin-menu-bar-item {
+    font-size: var(--lumo-font-size-s);
+}
+
+vaadin-menu-bar[jmix-role='jmix-dropdown-button'][theme~='large'] > vaadin-menu-bar-button > vaadin-menu-bar-item,
+vaadin-menu-bar[jmix-role='jmix-combo-button-icon'][theme~='large'] > vaadin-menu-bar-button > vaadin-menu-bar-item {
+    font-size: var(--lumo-font-size-l);
+}
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+jmix-upload-field[theme~="no-file-name"] .jmix-upload-button {
+    flex-grow: 1;
+}
+
+.jmix-upload-field-input-container {
+    align-items: center;
+    display: flex;
+    gap: var(--lumo-space-s);
+}
+
+.jmix-upload-field-file-name {
+    cursor: pointer;
+    margin: 0;
+}
+.jmix-upload-field-file-name:hover {
+    text-decoration: underline;
+}
+
+.jmix-upload-field-file-name.empty {
+    color: var(--lumo-body-text-color);
+    cursor: default;
+}
+
+.jmix-upload-field-clear {
+    color: var(--lumo-contrast-60pct);
+    font-size: var(--lumo-icon-size-m);
+    background: transparent;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.jmix-upload-field-clear:focus {
+    outline: none;
+    border-radius: var(--lumo-border-radius-s);
+    box-shadow: 0 0 0 2px var(--lumo-primary-color-50pct);
+}
+
+.jmix-upload-field-clear::before {
+    content: var(--lumo-icons-cross);
+    font-family: 'lumo-icons';
+    display: block;
+}
+
+.jmix-upload-field-clear:hover {
+    color: var(--lumo-contrast-90pct);
+}
+
+.jmix-upload-dialog-content {
+    display: flex;
+    flex-direction: column;
+    min-width: 20em;
+}
+
+.jmix-upload-dialog-cancel-button {
+    align-self: end;
+}
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+img[theme~="fill"] {
+    object-fit: fill;
+}
+
+img[theme~="contain"] {
+    object-fit: contain;
+}
+
+img[theme~="cover"] {
+    object-fit: cover;
+}
+
+img[theme~="scale-down"] {
+    object-fit: scale-down;
+}
+
+/*
+ * Copyright 2023 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-generic-filter-controls-layout {
+    flex-wrap: wrap;
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-property-filter .unary-field {
+  width: 6em;
+}
+
+.jmix-property-filter .filter-label {
+  white-space: nowrap;
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-group-filter {
+  border: 1px solid;
+  border-color: var(--lumo-contrast-20pct);
+  border-radius: var(--lumo-border-radius-l);
+  margin-top: var(--lumo-space-s);
+  margin-bottom: var(--lumo-space-s);
+}
+/*
+ * Copyright 2023 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+vaadin-menu-bar[jmix-role='jmix-grid-column-visibility'] > vaadin-menu-bar-button {
+    margin: var(--lumo-space-xs) 0;
+}
+
+
+/*
+ * Copyright 2023 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-main-view-navigation > .jmix-menu-filter-field {
+    margin: var(--lumo-space-s) var(--lumo-space-m) var(--lumo-space-s)  var(--lumo-space-m);
+}
+/*
+ * Copyright 2023 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-horizontal-menu {
+  color: var(--lumo-secondary-text-color);
+}
+
+.jmix-horizontal-menu-root-item:hover {
+  color: var(--lumo-contrast-80pct);
+}
+
+.jmix-horizontal-menu vaadin-menu-bar-button {
+  color: inherit;
+  background-color: transparent;
+  border-radius: var(--lumo-border-radius-m);
+  padding: 0;
+}
+
+.jmix-horizontal-menu vaadin-menu-bar-button[expanded] {
+  background-color: var(--lumo-primary-color-10pct);
+}
+
+.jmix-horizontal-menu vaadin-menu-bar-button.jmix-horizontal-menu-item-wrapper[focus-ring] {
+  box-shadow: inset 0 0 0 var(--_focus-ring-width) var(--_focus-ring-color)
+}
+
+vaadin-menu-bar .jmix-horizontal-menu-item-wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+vaadin-menu-bar-list-box .jmix-horizontal-menu-item-wrapper {
+  padding: 0;
+}
+
+vaadin-menu-bar-list-box vaadin-menu-bar-item[class~='jmix-horizontal-menu-item-wrapper']::part(checkmark) {
+  display: none;
+}
+
+.jmix-horizontal-menu-item-wrapper[aria-haspopup='true']::after {
+  margin: 0;
+  padding-inline-start: calc(var(--lumo-space-s) + var(--lumo-space-xs));
+  padding-inline-end: var(--lumo-space-s);
+}
+
+.jmix-horizontal-menu-content-item {
+  gap: var(--lumo-space-s);
+  align-items: center;
+}
+
+.jmix-horizontal-menu-content-item vaadin-icon.prefix-component {
+  width: var(--lumo-icon-size-s);
+  height: var(--lumo-icon-size-s);
+}
+
+.jmix-horizontal-menu-content-item .suffix-component {
+  margin-inline-start: auto;
+}
+
+vaadin-menu-bar .jmix-horizontal-menu-content-item {
+  padding-inline-start: calc(var(--lumo-size-m) / 3 + var(--lumo-border-radius-m) / 2);
+  padding-inline-end: calc(var(--lumo-size-m) / 3 + var(--lumo-border-radius-m) / 2);
+
+  /*explicit values are copied from vaadin-menu-bar-item component*/
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+vaadin-menu-bar-list-box .jmix-horizontal-menu-content-item {
+  /*The padding is equal to width of icon prefix when it's not set*/
+  padding-inline-start: calc(var(--lumo-icon-size-s) + var(--lumo-space-s) * 2);
+  padding-inline-end: 0;
+
+  /*explicit values are copied from vaadin-menu-bar-item component*/
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+vaadin-menu-bar-list-box .jmix-horizontal-menu-content-item[prefixed] {
+  padding-inline-start: var(--lumo-space-s);
+}
+
+vaadin-menu-bar-list-box .jmix-horizontal-menu-content-item .text-component:not(:last-child) {
+  margin-inline-end: var(--lumo-space-l);
+}
+
+.jmix-horizontal-menu-item:hover {
+  text-decoration: none;
+}
+
+vaadin-menu-bar-item .jmix-horizontal-menu-item {
+  color: inherit;
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+}
+
+vaadin-menu-bar-list-box .jmix-horizontal-menu-item {
+  /*The padding is equal to width of 'greater' sign of expandable items*/
+  padding-inline-end: calc(var(--lumo-icon-size-s) + var(--lumo-space-s) * 2);
+}
+
+/*
+ * Copyright 2023 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-grid-context-menu-item-component {
+  gap: var(--lumo-space-s);
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.jmix-grid-context-menu-item-component vaadin-icon.prefix-component {
+  width: var(--lumo-icon-size-s);
+  height: var(--lumo-icon-size-s);
+}
+
+.jmix-grid-context-menu-item-component .suffix-component {
+  margin-inline-start: auto;
+}
+
+.jmix-grid-context-menu-item-component kbd.suffix-component {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: calc(var(--lumo-space-xs) / 2) var(--lumo-space-xs);
+  font-size: calc(var(--lumo-font-size-xs) * 0.85);
+  line-height: var(--lumo-line-height-xs);
+  color: var(--lumo-secondary-text-color);
+  vertical-align: middle;
+  background-color: var(--lumo-contrast-5pct);
+  border: 1px solid var(--lumo-contrast-20pct);
+  border-radius: var(--lumo-border-radius-m);
+  box-shadow: inset 0 -1px 0 var(--lumo-contrast-20pct, var(--lumo-contrast-5pct));
+}
+
+.jmix-grid-context-menu-item-component .text-component:not(:last-child) {
+  margin-inline-end: var(--lumo-space-l);
+}
+
+/*
+ * Copyright 2024 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+
+/* Vaadin-Icons */
+
+html {
+    --jmix-rte-icons-bold: "\e6f8";
+    --jmix-rte-icons-italic: "\e720";
+    --jmix-rte-icons-underline: "\e744";
+    --jmix-rte-icons-strikethrough: "\e73b";
+
+    --jmix-rte-icons-subscript: "\e6d4";
+    --jmix-rte-icons-superscript: "\e6d5";
+
+    --jmix-rte-icons-list-ordered: "\e71f";
+    --jmix-rte-icons-list-bullet: "\e7f0";
+
+    --jmix-rte-icons-align-start: "\e74c";
+    --jmix-rte-icons-align-center: "\e74b";
+    --jmix-rte-icons-align-end: "\e74d";
+    --jmix-rte-icons-align-justify: "\e7ae";
+
+    --jmix-rte-icons-image: "\e7fc";
+    --jmix-rte-icons-link: "\e725";
+
+    --jmix-rte-icons-quote-right: "\e6c3";
+
+    --jmix-rte-icons-angle-left: "\e6eb";
+    --jmix-rte-icons-angle-right: "\e6ec";
+
+    --jmix-rte-icons-clean: "\e69a";
+}
+
+
+/*
+  Quill core styles.
+  CSS selectors removed: margin & padding reset, check list, indentation, video, colors, ordered & unordered list, h1-6, anchor
+*/
+jmix-rich-text-editor .ql-clipboard {
+    left: -100000px;
+    height: 1px;
+    overflow-y: hidden;
+    position: absolute;
+    top: 50%;
+}
+
+jmix-rich-text-editor .ql-clipboard p {
+    margin: 0;
+    padding: 0;
+}
+
+jmix-rich-text-editor .ql-editor {
+    box-sizing: border-box;
+    line-height: 1.42;
+    height: 100%;
+    outline: none;
+    overflow-y: auto;
+    padding: 0.75em 1em;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    flex: 1;
+}
+
+jmix-rich-text-editor .ql-editor > * {
+    cursor: text;
+}
+
+jmix-rich-text-editor .ql-align-left {
+    text-align: left;
+}
+
+jmix-rich-text-editor .ql-direction-rtl {
+    direction: rtl;
+    text-align: inherit;
+}
+
+jmix-rich-text-editor .ql-align-center {
+    text-align: center;
+}
+
+jmix-rich-text-editor .ql-align-justify {
+    text-align: justify;
+}
+
+jmix-rich-text-editor .ql-align-right {
+    text-align: right;
+}
+
+
+/* Base */
+
+jmix-rich-text-editor .jmix-rich-text-editor-container {
+    display: flex;
+    flex-direction: column;
+    min-height: inherit;
+    max-height: inherit;
+    flex: auto;
+    overflow: hidden;
+}
+
+vaadin-form-layout jmix-rich-text-editor {
+    /* Workaround for odd margin inside vaadin-form-layout */
+    align-self: flex-start;
+}
+
+
+/* Toolbar */
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+
+    background-color: var(--lumo-contrast-5pct);
+    padding: calc(var(--lumo-space-s) - 1px) var(--lumo-space-xs);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-group'] {
+    display: flex;
+    margin: 0 calc(var(--lumo-space-l) / 2 - 1px);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button'] {
+    padding: 0;
+    font: inherit;
+    line-height: 1;
+    text-transform: none;
+    background: transparent;
+    border: none;
+    position: relative;
+
+    width: var(--lumo-size-m, 2em);
+    height: var(--lumo-size-m, 2em);
+    border-radius: var(--lumo-border-radius-m);
+    color: var(--lumo-contrast-60pct);
+    margin: 2px 1px;
+    cursor: var(--lumo-clickable-cursor);
+    transition: background-color 100ms, color 100ms;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button']:hover {
+    outline: none;
+    background-color: var(--lumo-contrast-5pct);
+    color: var(--lumo-contrast-80pct);
+    box-shadow: none;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button']:focus {
+    outline: none;
+    box-shadow: 0 0 0 var(--_focus-ring-width) var(--_focus-ring-color);
+}
+
+@media (forced-colors: active) {
+    jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button']:focus,
+    jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button']:hover {
+        outline: 1px solid !important;
+    }
+
+    jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button'].ql-active {
+        outline: 2px solid;
+        outline-offset: -1px;
+    }
+}
+
+@media (hover: none) {
+    jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button']:hover {
+        background-color: transparent;
+    }
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button']::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: 'Vaadin-Icons';
+    font-size: var(--lumo-icon-size-xs);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button'].ql-active {
+    background-color: var(--vaadin-selection-color, var(--lumo-primary-color));
+    color: var(--lumo-primary-contrast-color);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button']:active {
+    background-color: var(--lumo-contrast-10pct);
+    color: var(--lumo-contrast-90pct);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-bold']::before {
+    content: var(--jmix-rte-icons-bold);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-italic']::before {
+    content: var(--jmix-rte-icons-italic);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-underline']::before {
+    content: var(--jmix-rte-icons-underline);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-strike']::before {
+    content: var(--jmix-rte-icons-strikethrough);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-h1']::before {
+    content: 'H1';
+    font-size: var(--lumo-font-size-xl, 1.25em);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-h2']::before {
+    content: 'H2';
+    font-size: var(--lumo-font-size-l, 1em);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-h3']::before {
+    content: 'H3';
+    font-size: var(--lumo-font-size-m, 0.875em);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-h1']::before,
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-h2']::before,
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-h3']::before {
+    font-family: var(--lumo-font-family);
+    letter-spacing: -0.05em;
+    font-weight: 700;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-subscript']::before {
+    content: var(--jmix-rte-icons-subscript);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-superscript']::before {
+    content: var(--jmix-rte-icons-superscript);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-blockquote']::before {
+    content: var(--jmix-rte-icons-quote-right);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-code-block']::before {
+    content: var(--jmix-rte-icons-angle-left) var(--jmix-rte-icons-angle-right);
+    letter-spacing: -0.4em;
+    margin-left: -0.2em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-list-ordered']::before {
+    content: var(--jmix-rte-icons-list-ordered);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-list-bullet']::before {
+    content: var(--jmix-rte-icons-list-bullet);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-align-start']::before {
+    content: var(--jmix-rte-icons-align-start);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-align-center']::before {
+    content: var(--jmix-rte-icons-align-center);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-align-end']::before {
+    content: var(--jmix-rte-icons-align-end);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-align-justify']::before {
+    content: var(--jmix-rte-icons-align-justify);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-image']::before {
+    content: var(--jmix-rte-icons-image);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-link']::before {
+    content: var(--jmix-rte-icons-link);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar [class*='toolbar-button-clean']::before {
+    content: var(--jmix-rte-icons-clean);
+}
+
+/* State */
+
+jmix-rich-text-editor[readonly] .jmix-rich-text-editor-toolbar {
+    display: none;
+}
+
+jmix-rich-text-editor[disabled] [class*='toolbar-button'] {
+    background-color: transparent;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-toolbar input[type='file'] {
+    display: none;
+}
+
+
+/* Content */
+
+jmix-rich-text-editor .jmix-rich-text-editor-content {
+    box-sizing: border-box;
+    position: relative;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    background-color: var(--lumo-base-color);
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content > .ql-editor {
+    padding: 0 var(--lumo-space-m);
+    line-height: inherit;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content :where(h1, h2, h3, h4, h5, h6) {
+    margin-top: 1.25em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content h1 {
+    margin-bottom: 0.75em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content :where(h2, h3, h4) {
+    margin-bottom: 0.5em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content h5 {
+    margin-bottom: 0.25em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content blockquote {
+    padding-left: 1em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content pre {
+    white-space: pre-wrap;
+    margin-bottom: 0.3125em;
+    margin-top: 0.3125em;
+    padding: 0.3125em 0.625em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content code {
+    font-size: 85%;
+    padding: 0.125em 0.25em;
+}
+
+jmix-rich-text-editor .jmix-rich-text-editor-content img {
+    max-width: 100%;
+}
+
+/* Theme variants */
+
+/* No border */
+jmix-rich-text-editor:not([theme~='no-border']):not([readonly]) .jmix-rich-text-editor-content {
+    border-top: 1px solid var(--lumo-contrast-20pct);
+}
+
+jmix-rich-text-editor[theme~='no-border'] .jmix-rich-text-editor-toolbar {
+    padding-top: var(--lumo-space-s);
+    padding-bottom: var(--lumo-space-s);
+}
+
+/* Compact */
+jmix-rich-text-editor[theme~='compact'] {
+    min-height: calc(var(--lumo-size-m) * 6);
+}
+
+jmix-rich-text-editor[theme~='compact'] .jmix-rich-text-editor-toolbar {
+    padding: var(--lumo-space-xs) 0;
+}
+
+jmix-rich-text-editor[theme~='compact'][theme~='no-border'] .jmix-rich-text-editor-toolbar {
+    padding: calc(var(--lumo-space-xs) + 1px) 0;
+}
+
+jmix-rich-text-editor[theme~='compact'] [class*='toolbar-button'] {
+    width: var(--lumo-size-s);
+    height: var(--lumo-size-s);
+}
+
+jmix-rich-text-editor[theme~='compact'] [class*='toolbar-group'] {
+    margin: 0 calc(var(--lumo-space-m) / 2 - 1px);
+}
+
+
+/* RTL specific styles */
+
+jmix-rich-text-editor[dir='rtl'] .ql-editor {
+    direction: rtl;
+    text-align: right;
+}
+
+jmix-rich-text-editor[dir='rtl'] .jmix-rich-text-editor-toolbar [class*='toolbar-button-align-start'] {
+    rotate: 180deg;
+}
+
+jmix-rich-text-editor[dir='rtl'] .jmix-rich-text-editor-toolbar [class*='toolbar-button-align-end'] {
+    rotate: 180deg;
+}
+
+jmix-combo-box-picker[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+jmix-combo-box-picker[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+jmix-combo-box-picker[disabled][has-error-message]::part(error-message),
+jmix-combo-box-picker[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+jmix-code-editor[readonly][has-error-message]::part(error-message),
+jmix-code-editor[disabled][has-error-message]::part(error-message) {
+    display:none;
+}
+
+jmix-code-editor[readonly][invalid],
+jmix-code-editor[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+}
+jmix-value-picker[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+jmix-value-picker[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+jmix-value-picker[disabled][has-error-message]::part(error-message),
+jmix-value-picker[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+jmix-multi-select-combo-box-picker[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+jmix-multi-select-combo-box-picker[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+jmix-multi-select-combo-box-picker[disabled][has-error-message]::part(error-message),
+jmix-multi-select-combo-box-picker[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+.jmix-twin-column-items-column-label, .jmix-twin-column-selected-items-column-label  {
+    color: var(--lumo-secondary-text-color);
+    font-weight: 500;
+    line-height: 1;
+    font-size: var(--lumo-font-size-s);
+    padding-bottom: var(--lumo-space-xs);
+}
+
+jmix-twin-column[disabled] :is(.jmix-twin-column-items-column-label, .jmix-twin-column-selected-items-column-label) {
+    color: var(--lumo-disabled-text-color);
+}
+
+jmix-twin-column vaadin-list-box {
+    border: 1px solid var(--lumo-contrast-20pct);
+    border-radius: 0;
+}
+
+jmix-twin-column vaadin-item {
+    border-bottom: 1px solid var(--lumo-contrast-10pct);
+    border-radius: 0;
+    padding: var(--lumo-space-xs) var(--lumo-space-m);
+}
+
+jmix-twin-column vaadin-item::part(checkmark) {
+    display: none;
+}
+
+jmix-twin-column vaadin-item[selected] {
+    background-color: var(--lumo-primary-color-10pct);
+}
+
+jmix-twin-column vaadin-item:not([selected]):hover {
+    background-color: transparent;
+}
+
+jmix-twin-column[theme~="no-border"] vaadin-list-box  {
+    border-width: 0;
+}
+
+jmix-twin-column[theme~="no-row-border"] vaadin-item  {
+    border-width: 0;
+}
+
+jmix-twin-column[theme~="checkmarks"] vaadin-item::part(checkmark)  {
+    display: block;
+}
+
+jmix-twin-column[theme~="checkmarks"] vaadin-item {
+    padding: var(--lumo-space-xs) var(--lumo-space-m) var(--lumo-space-xs) var(--lumo-space-xs);
+}
+
+jmix-twin-column[theme~="checkmarks"] vaadin-item[selected] {
+    background-color: transparent;
+}
+
+jmix-twin-column[theme~="checkmarks"] vaadin-item:hover {
+    background-color: var(--lumo-primary-color-10pct);
+}
+
+jmix-twin-column vaadin-item:nth-last-of-type(1) {
+    border-bottom: 0px;
+}
+
+jmix-twin-column vaadin-button:first-child {
+    margin-top: var(--lumo-space-s);
+}
+
+jmix-twin-column[theme~="no-space-between-actions"] vaadin-button:first-child {
+    border-top-left-radius: var(--lumo-border-radius-m);
+    border-top-right-radius: var(--lumo-border-radius-m);
+}
+
+jmix-twin-column[theme~="no-space-between-actions"] vaadin-button {
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+jmix-twin-column[theme~="no-space-between-actions"] vaadin-button:last-child {
+    border-bottom-left-radius: var(--lumo-border-radius-m);
+    border-bottom-right-radius: var(--lumo-border-radius-m);
+}
+
+jmix-twin-column .jmix-twin-column-actions-panel {
+    padding: 0 var(--lumo-space-s) 0 var(--lumo-space-s);
+    box-sizing: content-box;
+}
+
+jmix-twin-column vaadin-button vaadin-icon[dir="rtl"] {
+    rotate: 180deg;
+}
+
+jmix-twin-column[invalid] .jmix-twin-column-items-column {
+    border-top: 1px solid var(--lumo-error-color);
+    border-left: 1px solid var(--lumo-error-color);
+    border-bottom: 1px solid var(--lumo-error-color);
+}
+
+jmix-twin-column[invalid][dir="rtl"] .jmix-twin-column-items-column {
+    border-left-width: 0;
+    border-right: 1px solid var(--lumo-error-color);
+}
+
+jmix-twin-column[invalid] .jmix-twin-column-selected-items-column {
+    border-top: 1px solid var(--lumo-error-color);
+    border-right: 1px solid var(--lumo-error-color);
+    border-bottom: 1px solid var(--lumo-error-color);
+}
+
+jmix-twin-column[invalid][dir="rtl"] .jmix-twin-column-selected-items-column {
+    border-left: 1px solid var(--lumo-error-color);
+    border-right-width: 0;
+}
+
+jmix-twin-column[invalid] .jmix-twin-column-actions-panel {
+    border-top: 1px solid var(--lumo-error-color);
+    border-bottom: 1px solid var(--lumo-error-color);
+}
+/*
+ * Copyright 2025 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+vaadin-menu-bar[jmix-role='jmix-user-menu'] vaadin-menu-bar-button.jmix-user-menu-button {
+    padding: 0;
+    min-width: var(--lumo-button-size);
+    height: auto;
+}
+
+vaadin-menu-bar[jmix-role='jmix-user-menu'] vaadin-menu-bar-button.jmix-user-menu-button::part(label) {
+    padding: 0;
+}
+
+vaadin-menu-bar[jmix-role='jmix-user-menu'] vaadin-menu-bar-item.jmix-user-menu-button {
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+}
+
+/* Overlay */
+
+vaadin-menu-bar-overlay.jmix-user-menu-overlay vaadin-menu-bar-item::part(content) {
+    display: flex;
+    align-items: center;
+    gap: var(--lumo-space-s);
+}
+
+vaadin-menu-bar-overlay.jmix-user-menu-overlay vaadin-menu-bar-item::part(checkmark):before {
+    color: inherit;
+}
+
+vaadin-menu-bar-overlay.jmix-user-menu-overlay vaadin-menu-bar-item[theme~='non-checkable'] {
+    padding-inline-start: var(--lumo-space-s);
+}
+
+vaadin-menu-bar-overlay.jmix-user-menu-overlay vaadin-menu-bar-item[theme~='non-checkable']::part(checkmark) {
+    display: none;
+}
+
+/* Default Button Renderer */
+
+.jmix-user-menu-button-content {
+    display: grid;
+    grid-template: "avatar username"
+                   "avatar subtext";
+    grid-template-columns: auto 1fr;
+    column-gap: var(--lumo-space-s);
+
+    width: max-content;
+    box-sizing: border-box;
+
+    color: var(--lumo-body-text-color);
+    padding: var(--lumo-space-xs) var(--lumo-space-s);
+}
+
+.jmix-user-menu-button-content > .jmix-user-menu-button-content-user-avatar {
+    grid-area: avatar;
+    align-self: center;
+}
+
+.jmix-user-menu-button-content > .jmix-user-menu-button-content-user-name {
+    grid-row: username / subtext;
+    align-self: center;
+    text-align: start;
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+vaadin-menu-bar[jmix-role='jmix-user-menu'][theme~='substituted'] .jmix-user-menu-button-content > .jmix-user-menu-button-content-user-name {
+    grid-row: username;
+}
+
+.jmix-user-menu-button-content > .jmix-user-menu-button-content-subtext {
+    grid-area: subtext;
+    align-self: center;
+    text-align: start;
+
+    color: var(--lumo-secondary-text-color);
+    font-size: var(--lumo-font-size-xs);
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+vaadin-menu-bar[jmix-role='jmix-user-menu']:not([theme~='substituted']) .jmix-user-menu-button-content > .jmix-user-menu-button-content-subtext {
+    display: none;
+}
+
+
+vaadin-text-field[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-text-field[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-text-field[disabled][has-error-message]::part(error-message),
+vaadin-text-field[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-text-area[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-text-area[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-text-area[disabled][has-error-message]::part(error-message),
+vaadin-text-area[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-number-field[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-number-field[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-number-field[disabled][has-error-message]::part(error-message),
+vaadin-number-field[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-big-decimal-field[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-big-decimal-field[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-big-decimal-field[disabled][has-error-message]::part(error-message),
+vaadin-big-decimal-field[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-integer-field[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-integer-field[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-integer-field[disabled][has-error-message]::part(error-message),
+vaadin-integer-field[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-password-field[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-password-field[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-password-field[disabled][has-error-message]::part(error-message),
+vaadin-password-field[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-email-field[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-email-field[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-email-field[disabled][has-error-message]::part(error-message),
+vaadin-email-field[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-select[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-select[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-select[disabled][has-error-message]::part(error-message),
+vaadin-select[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-checkbox-group[readonly][has-error-message]::part(error-message),
+vaadin-checkbox-group[disabled][has-error-message]::part(error-message) {
+    display: none;
+}
+
+vaadin-checkbox-group[readonly][invalid],
+vaadin-checkbox-group[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+}
+vaadin-radio-group[readonly][has-error-message]::part(error-message),
+vaadin-radio-group[disabled][has-error-message]::part(error-message) {
+    display: none;
+}
+
+vaadin-radio-group[readonly][invalid],
+vaadin-radio-group[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+}
+vaadin-date-picker[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-date-picker[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-date-picker[disabled][has-error-message]::part(error-message),
+vaadin-date-picker[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-time-picker[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-time-picker[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-time-picker[disabled][has-error-message]::part(error-message),
+vaadin-time-picker[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-date-time-picker[readonly][invalid]::part(error-message),
+vaadin-date-time-picker[disabled][invalid]::part(error-message) {
+    display: none;
+}
+
+vaadin-date-time-picker[readonly],
+vaadin-date-time-picker[disabled] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+}
+
+vaadin-date-time-picker[readonly] ::part(input-field) {
+    --vaadin-input-field-invalid-background: transparent;
+}
+
+vaadin-date-time-picker[readonly] ::part(input-field)::after {
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-date-time-picker[disabled] ::part(input-field) {
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+/*
+ * Copyright 2025 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-dialog-window-header-wrapper {
+    display: inline-flex;
+    column-gap: var(--lumo-space-s);
+}
+
+.jmix-dialog-window-header-wrapper > .jmix-dialog-window-close-button {
+    margin-inline-start: auto;
+}
+
+vaadin-combo-box[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-combo-box[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-combo-box[disabled][has-error-message]::part(error-message),
+vaadin-combo-box[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+vaadin-multi-select-combo-box[readonly][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: transparent;
+    --vaadin-input-field-invalid-hover-highlight: transparent;
+}
+
+vaadin-multi-select-combo-box[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+    --vaadin-input-field-invalid-background: var(--lumo-contrast-5pct);
+}
+
+vaadin-multi-select-combo-box[disabled][has-error-message]::part(error-message),
+vaadin-multi-select-combo-box[readonly][has-error-message]::part(error-message) {
+    display: none;
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+vaadin-form-item[theme~='jmix-group-filter-form-item']:not([label-position='top']) {
+  align-items: center;
+}
+
+vaadin-form-item[theme~='jmix-group-filter-form-item']:not([label-position='top'])::part(label) {
+  margin: 0;
+}
+
+vaadin-form-item[theme~='label-align-end']:not([label-position='top'])::part(label) {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+vaadin-grid[theme~='no-header']::part(header-cell) {
+  display: none;
+}
+
+/* Dialog overlay style like a popup */
+vaadin-dialog-overlay[class~='column-filter-popup']::part(backdrop) {
+  background: unset;
+}
+
+vaadin-dialog-overlay[class~='column-filter-dialog']::part(content) {
+  display: flex;
+  flex-direction: row;
+  gap: var(--lumo-space-s);
+  padding: var(--lumo-space-wide-m);
+}
+
+vaadin-dialog-overlay[class~='column-filter-popup']::part(overlay) {
+  align-self: flex-start;
+  position: absolute;
+}
+
+vaadin-dialog-overlay[class~='column-filter-footer-small']::slotted([slot='footer']) {
+  display: flex;
+  gap: var(--lumo-space-s);
+  width: 100%;
+}
+
+/* Styles for the column-filter button */
+[jmix-role='column-filter-button']:not([activated]):hover {
+  color: var(--lumo-contrast);
+}
+
+[jmix-role='column-filter-button']:not([activated]) {
+  color: var(--lumo-tertiary-text-color);
+}
+
+[jmix-role='column-filter-button']:is([activated]) {
+  color: var(--lumo-primary-text-color);
+}
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+.jmix-text-layout-closeable .title,
+.jmix-text-layout-closeable .message,
+.jmix-text-layout .title,
+.jmix-text-layout .message {
+  white-space: pre-wrap;
+}
+
+.jmix-text-layout-closeable .title,
+.jmix-text-layout .title {
+  font-size: var(--lumo-font-size-l);
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+.jmix-text-layout-closeable .message,
+.jmix-text-layout .message {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.jmix-closeable-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--lumo-space-s)
+}
+
+.jmix-closeable-layout .close-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.jmix-closeable-layout .close-button {
+  color: inherit;
+}
+
+vaadin-notification-card:not([slot$='stretch']) .jmix-closeable-layout {
+  padding-inline-end: var(--lumo-space-xs);
+}
+
+vaadin-notification-card[slot$='stretch'] .jmix-closeable-layout .close-button {
+  padding-top: var(--lumo-space-s);
+  padding-inline-end: var(--lumo-space-s);
+}
+
+vaadin-notification-card:not([slot$='stretch']) .jmix-closeable-layout .close-button {
+  padding-top: var(--lumo-space-xs);
+  padding-inline-end: var(--lumo-space-xs);
+}
+
+vaadin-notification-card[slot$='stretch'] .jmix-text-layout-closeable {
+  padding-inline-start: unset;
+}
+
+vaadin-notification-card[theme~='warning'] .jmix-text-layout-closeable .title,
+vaadin-notification-card[theme~='warning'] .jmix-text-layout .title {
+  color: var(--lumo-warning-contrast-color);
+}
+
+vaadin-notification-card[theme~='contrast'] .jmix-text-layout-closeable .title,
+vaadin-notification-card[theme~='contrast'] .jmix-text-layout .title {
+  color: var(--lumo-base-color);
+}
+
+vaadin-notification-card[theme~='error'] .jmix-text-layout-closeable .title,
+vaadin-notification-card[theme~='error'] .jmix-text-layout .title {
+  color: var(--lumo-error-contrast-color);
+}
+
+vaadin-notification-card[theme~='success'] .jmix-text-layout-closeable .title,
+vaadin-notification-card[theme~='success'] .jmix-text-layout .title {
+  color: var(--lumo-success-contrast-color);
+}
+
+vaadin-notification-card[theme~='primary'] .jmix-text-layout-closeable .title,
+vaadin-notification-card[theme~='primary'] .jmix-text-layout .title {
+  color: var(--lumo-primary-contrast-color);
+}
+
+vaadin-notification-card::part(overlay) {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/*
+ * Copyright 2022 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+vaadin-split-layout[theme~='splitter-spacing'] {
+  gap: var(--lumo-space-s);
+}
+
+vaadin-checkbox[readonly][has-error-message]::part(error-message),
+vaadin-checkbox[disabled][has-error-message]::part(error-message) {
+    display: none;
+}
+
+vaadin-checkbox[readonly][invalid],
+vaadin-checkbox[disabled][invalid] {
+    --lumo-required-field-indicator-color: var(--lumo-primary-text-color);
+}
+
+/*
+ * Copyright 2024 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+@font-face {
+    font-family: 'Vaadin-Icons';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url('VAADIN/themes/jmix-lumo/icons/vaadin-icons/Vaadin-Icons.woff') format("woff"), url('VAADIN/themes/jmix-lumo/icons/vaadin-icons/Vaadin-Icons.ttf') format("truetype"), url('VAADIN/themes/jmix-lumo/icons/vaadin-icons/Vaadin-Icons.eot') format("eot");
+}
+
+html {
+  --jmix-lumo-warning-background-color: var(--lumo-warning-color);
+  --jmix-lumo-warning-background-color-50pct: hsla(48, 100%, 50%, 0.5);
+  --jmix-lumo-warning-background-color-10pct: var(--lumo-warning-color-10pct);
+  --jmix-lumo-warning-primary-text-color: var(--lumo-warning-text-color);
+  --jmix-lumo-warning-color: var(--lumo-warning-contrast-color);
+
+  --jmix-simple-pagination-gap: 0.3em;
+}
+</style>
+  <style data-file-path="VAADIN/themes/competitions/styles.css">/* Define your styles here */
+/* Predefined styles for the MainView */
+
+.jmix-main-view-header {
+  box-sizing: border-box;
+  display: flex;
+  height: var(--lumo-size-xl);
+  align-items: center;
+  width: 100%;
+}
+
+.jmix-main-view-drawer-toggle {
+  color: var(--lumo-secondary-text-color);
+}
+
+.jmix-main-view-title {
+  margin: 0;
+  font-size: var(--lumo-font-size-l);
+}
+
+.jmix-main-view-section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-height: 100%;
+  min-height: 100%;
+}
+
+.jmix-main-view-application-title {
+  display: flex;
+  align-items: center;
+  height: var(--lumo-size-xl);
+  margin: 0;
+  padding-left: var(--lumo-space-m);
+  padding-right: var(--lumo-space-m);
+  font-size: var(--lumo-font-size-m);
+}
+
+.jmix-main-view-application-title-base-link {
+  color: var(--lumo-header-text-color);
+}
+
+.jmix-main-view-application-title-base-link:hover {
+  text-decoration: none;
+}
+
+.jmix-main-view-navigation {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid;
+  border-color: var(--lumo-contrast-10pct);
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.jmix-main-view-footer {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--lumo-space-s);
+  margin-top: var(--lumo-space-s);
+  padding: var(--lumo-space-xs) var(--lumo-space-m);
+  gap: var(--lumo-space-m);
+}
+
+.jmix-main-view-footer .jmix-user-indicator {
+  flex-grow: 1;
+}
+
+/* User Menu */
+
+.jmix-main-view-footer :is(.jmix-user-menu-button-content, .user-menu-button-content) {
+    width: calc(var(--vaadin-app-layout-drawer-width, 16em) - var(--lumo-space-m) * 2);
+}
+
+.user-menu-button-content,
+.user-menu-header-content {
+    display: grid;
+    grid-template: "avatar text"
+                   "avatar subtext";
+    grid-template-columns: auto 1fr;
+    column-gap: var(--lumo-space-s);
+
+    width: max-content;
+    box-sizing: border-box;
+
+    color: var(--lumo-body-text-color);
+    padding: var(--lumo-space-xs) var(--lumo-space-s);
+}
+
+.user-menu-header-content {
+    width: 100%;
+    padding-inline-end: var(--lumo-space-l);
+}
+
+.user-menu-button-content > .user-menu-avatar,
+.user-menu-header-content > .user-menu-avatar {
+    grid-area: avatar;
+    align-self: center;
+}
+
+.user-menu-button-content > .user-menu-text {
+    grid-row: text / subtext;
+}
+
+vaadin-menu-bar[jmix-role='jmix-user-menu'][theme~='substituted'] .user-menu-button-content > .user-menu-text {
+    grid-row: text;
+}
+
+.user-menu-header-content > .user-menu-text {
+    grid-area: text;
+
+    color: var(--lumo-body-text-color);
+    font-weight: 700;
+    font-size: var(--lumo-font-size-m);
+}
+
+.user-menu-header-content > .user-menu-text-subtext {
+    grid-row: text / subtext;
+}
+
+.user-menu-button-content > .user-menu-text,
+.user-menu-header-content > .user-menu-text {
+    align-self: center;
+    text-align: start;
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-menu-button-content > .user-menu-subtext,
+.user-menu-header-content > .user-menu-subtext {
+    grid-area: subtext;
+    align-self: center;
+    text-align: start;
+
+    color: var(--lumo-secondary-text-color);
+    font-size: var(--lumo-font-size-xs);
+
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+vaadin-menu-bar[jmix-role='jmix-user-menu']:not([theme~='substituted']) .user-menu-button-content > .user-menu-subtext {
+    display: none;
+}
+
+/* Initial Layout */
+
+.jmix-initial-layout {
+    --title-size: var(--lumo-font-size-xxxl);
+    --title-color: var(--lumo-secondary-text-color);
+
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+
+    container-type: inline-size;
+    container-name: jmix-initial-layout;
+}
+
+.jmix-initial-layout-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 50rem;
+    padding: var(--lumo-space-xl);
+    box-sizing: border-box;
+}
+
+.jmix-initial-layout-title {
+    position: relative;
+
+    color: var(--title-color);
+    font-size: var(--title-size);
+    line-height: calc(4 * var(--title-size));
+    box-sizing: border-box;
+}
+
+.jmix-initial-layout-title:after {
+    position: absolute;
+    width: 100%;
+    height: 0.3rem;
+    content: '';
+    background: var(--title-color);
+    top: 0;
+    left: 0;
+}
+
+.jmix-initial-layout-logo {
+    --logo-size: calc(2.5 * var(--title-size));
+    width: var(--logo-size);
+    height: var(--logo-size);
+}
+
+@container jmix-initial-layout (max-width: 45rem) {
+    .jmix-initial-layout-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: var(--lumo-space-l);
+    }
+
+    .jmix-initial-layout-title {
+        padding-top: var(--lumo-space-m);
+        line-height: var(--lumo-line-height-m);
+        text-align: center;
+    }
+}
+/* Predefined styles for the MainView with a HorizontalMenu */
+
+vaadin-app-layout.jmix-main-view-top-menu-app-layout::part(navbar) {
+  min-height: 0;
+  border-bottom: 0;
+}
+
+.jmix-main-view-top-menu-navigation-bar-box {
+  padding: 0;
+  gap: 0;
+  width: 100%;
+}
+
+.jmix-main-view-top-menu-navigation {
+  display: flex;
+  flex-grow: 1;
+  overflow: auto;
+}
+
+.jmix-main-view-top-menu-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid var(--lumo-contrast-10pct)
+}
+
+.jmix-main-view-top-menu-logo-container {
+  display: flex;
+  margin: 0 var(--lumo-space-m);
+}
+
+.jmix-main-view-top-menu-logo {
+  width: var(--lumo-size-m);
+  height: var(--lumo-size-m);
+}
+
+.jmix-main-view-top-menu-user-box {
+  align-self: flex-end;
+  align-items: center;
+  margin: 0 var(--lumo-space-m);
+  max-width: 20em;
+}
+
+.jmix-main-view-top-menu-view-header-box {
+  border-bottom: 1px solid var(--lumo-contrast-10pct);
+  padding: 0;
+  width: 100%;
+}
+
+.jmix-main-view-top-menu-view-title {
+  font-size: var(--lumo-font-size-l);
+  margin: var(--lumo-space-s) var(--lumo-space-m);
+}
+
+
+/* Predefined styles for the LoginView */
+
+.jmix-login-main-layout {
+  background-color: var(--lumo-shade-5pct);
+}</style>
+  <script initial="" src="VAADIN/static/push/vaadinPush.js"></script>
+  <script>    jmixBeforeUnloadListener = (event) => {
+      event.preventDefault();
+      return (event.returnValue = "");
+    };
+</script>
+  <style type="text/css">/*
+ * Copyright 2024 Haulmont.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+vaadin-password-field[readonly][class~='reset-password-field'] {
+    --vaadin-input-field-readonly-border: transparent;
+}
+
+vaadin-password-field[readonly][class~='reset-password-field']::part(reveal-button) {
+    color: var(--lumo-contrast);
+}</style>
+ </head>
+ <body>
+  <!-- This outlet div is where the views are rendered -->
+  <div id="outlet"></div>
+  <script>window.Vaadin = window.Vaadin || {};
+window.Vaadin.registrations = window.Vaadin.registrations || [];
+window.Vaadin.registrations.push({"is":"flow/SpringInstantiator","version":"24.9.10"},{"is":"routing/server","version":"24.9.10"},{"is":"flow/app-dev-bundle","version":"24.9.10"},{"is":"flow/AtmospherePushConnection","version":"3.0.5.slf4jvaadin1"},{"is":"java","version":"17.0.18"},{"is":"SpringFramework","version":"6.2.15"},{"is":"has-flow-route","version":"24.9.10"},{"is":"SpringBoot","version":"3.5.9"},{"is":"flow-router","version":"24.9.10"});</script>
+  <vaadin-dev-tools></vaadin-dev-tools>
+ </body>
+</html>
