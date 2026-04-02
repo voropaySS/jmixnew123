@@ -155,8 +155,8 @@ public List<User> userDocRole(@RequestParam UUID docVersionId){
     return null;
 }
 //ПУНКТ 3 - меняет роли для версии
-@PostMapping("/userDocRole")
-public DocumentVersion userDocRole(@RequestParam UUID docVersionId, @RequestParam UUID userId){
+@PostMapping("/changeDocRole")
+public DocumentVersion changeDocRole(@RequestParam UUID docVersionId, @RequestParam UUID userId){
 
     DocumentVersion documentVersion = dataManager.load(DocumentVersion.class).id(docVersionId).one();
     DocRole roles = documentVersion.getDocRole();
