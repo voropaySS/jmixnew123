@@ -148,9 +148,11 @@ public List<User> userDocRole(@RequestParam UUID docVersionId){
 
     DocumentVersion documentVersion = dataManager.load(DocumentVersion.class).id(docVersionId).one();
     DocRole roles = documentVersion.getDocRole();
+    if (roles.getRedaktori() != null) {
+        return roles.getRedaktori();
+    }
 
-
-    return roles.getRedaktori();
+    return null;
 }
 //ПУНКТ 3 - меняет роли для версии
 @PostMapping("/userDocRole")
@@ -179,7 +181,7 @@ public DocumentVersion userDocRole(@RequestParam UUID docVersionId, @RequestPara
         System.out.println(" not easy 3");
 
         List<DocumentVersion> userDocuments = dataManager.load(DocumentVersion.class)
-                .query("select e from DocumentVersion e where e.document =:docId order by e.createdDate")
+                .query("select e from DocumentVersion e where e.document =:docId order by e.createdDate desc")
                 .parameter("docId", document)
                 .list();
 // .parameter("user", ((User) currentAuthentication.getUser()))
@@ -237,6 +239,12 @@ public DocumentVersion userDocRole(@RequestParam UUID docVersionId, @RequestPara
                 .list();
 
         return users;
+    }
+    @GetMapping("/docInfo")
+    public Document docInfo(@RequestParam UUID documentId) {
+        Document doc = dataManager.load(Document.class).id(documentId).one();
+
+        return doc;
     }
 
     //создать пользователя-согласованта
